@@ -18,10 +18,11 @@ function App() {
     <Router>
       <Routes>
         <Route path='/dashboard' element={<Dashboard/>}/>
+        <Route path='/' element={<Form title="WELCOME" label2="Email" label3="Password"/>}/>
       </Routes>
     </Router>
     </ThemeContext.Provider>
-    <Form title="WELCOME" label2="Email" label3="Password"/>
+    
     {/* <ThemeContext.Provider value={{theme, setTheme}}>
     <Dashboard/>
     </ThemeContext.Provider> */}
