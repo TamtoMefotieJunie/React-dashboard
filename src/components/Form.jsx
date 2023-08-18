@@ -1,7 +1,7 @@
 import "../css/navbar.css";
 import { MTNPhoneNumber, OrangePhoneNumber } from "../util/Validation";
 import FormButton from "./Button";
-import Input from "..components/Input";
+import Input from "../components/Input";
 import { useForm } from "react-hook-form"; 
 
 

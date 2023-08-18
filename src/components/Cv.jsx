@@ -1,8 +1,6 @@
 import React from "react"
 import { useState } from "react";
 import "../css/cv.css";
-import { useForm } from "react-hook-form"; 
-import Input from "./input";
 
 
 

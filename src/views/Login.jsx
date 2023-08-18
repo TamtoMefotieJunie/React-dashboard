@@ -1,6 +1,6 @@
 import "../css/navbar.css";
 import FormButton from "../components/Button";
-import Input from "../components/input";
+import Input from "../components/Input";
 import { useForm } from "react-hook-form"; 
 
 
