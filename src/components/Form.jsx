@@ -1,11 +1,11 @@
 import "../css/navbar.css";
 import { MTNPhoneNumber, OrangePhoneNumber } from "../util/Validation";
 import FormButton from "./Button";
-import Input from "./input";
+import Input from "..components/Input";
 import { useForm } from "react-hook-form"; 
 
 
-function LoginForm({title,label1,label2,label3,label4}){
+function RegisterForm({title,label1,label2,label3,label4}){
     
     const {register, handleSubmit,formState: {errors}} = useForm()
     return(
@@ -92,4 +92,4 @@ function LoginForm({title,label1,label2,label3,label4}){
         </>
     );
 } 
-export default LoginForm;
+export default RegisterForm;
