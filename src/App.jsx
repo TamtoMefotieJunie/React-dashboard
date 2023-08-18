@@ -1,5 +1,6 @@
 import { useState } from 'react'
 
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Form from './views/Login'
 import { CreateCv } from './components/Cv'
 import Dashboard from './views/Dashboard'
@@ -13,6 +14,13 @@ function App() {
 
   return (
     <>
+    <ThemeContext.Provider value={{theme, setTheme}}>
+    <Router>
+      <Routes>
+        <Route path='/dashboard' element={<Dashboard/>}/>
+      </Routes>
+    </Router>
+    </ThemeContext.Provider>
     <Form title="WELCOME" label2="Email" label3="Password"/>
     {/* <ThemeContext.Provider value={{theme, setTheme}}>
     <Dashboard/>
