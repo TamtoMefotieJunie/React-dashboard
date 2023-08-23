@@ -1,4 +1,4 @@
-
+import "../css/modal.css";
 import "../css/dashboard.css";
 import Input2 from "../components/FooterInput";
 import {CalendarTodayOutlined,TuneOutlined,ArrowDropDown} from "@mui/icons-material";
@@ -37,15 +37,15 @@ function DashboardFooter(){
 
         </div>
         <table>
-            <th className={"header-"+ theme}> ID</th>
-            <th className={"header-"+ theme}>Employee </th>
-            <th className={"header-"+ theme}>Role <span className="arrowmenu"><ArrowDropDown/></span></th>
-            <th className={"header-"+ theme}>Department <span className="arrowmenu"><ArrowDropDown/></span></th>
-            <th className={"header-"+ theme}>Date</th>
-            <th className={"header-"+ theme}>Status <span className="arrowmenu"><ArrowDropDown/></span></th>
-            <th className={"header-"+ theme}>Check-in <span className="arrowmenu"><ArrowDropDown/></span></th>
-            <th className={"header-"+ theme}>Check-out <span className="arrowmenu"><ArrowDropDown/></span></th>
-            <th className={"header-"+ theme}>Work hours <span className="arrowmenu"><ArrowDropDown/></span></th>
+            <th className={"headings header-"+ theme} > ID</th>
+            <th className={"headings header-"+ theme}>Employee </th>
+            <th className={"headings header-"+ theme}>Role <span className="arrowmenu"><ArrowDropDown/></span></th>
+            <th className={"headings header-"+ theme}>Department <span className="arrowmenu"><ArrowDropDown/></span></th>
+            <th className={"headings header-"+ theme}>Date</th>
+            <th className={"headings header-"+ theme}>Status <span className="arrowmenu"><ArrowDropDown/></span></th>
+            <th className={"headings header-"+ theme}>Check-in <span className="arrowmenu"><ArrowDropDown/></span></th>
+            <th className={"headings header-"+ theme}>Check-out <span className="arrowmenu"><ArrowDropDown/></span></th>
+            <th className={"headings header-"+ theme}>Work hours <span className="arrowmenu"><ArrowDropDown/></span></th>
         </table>
     </div> 
     </>

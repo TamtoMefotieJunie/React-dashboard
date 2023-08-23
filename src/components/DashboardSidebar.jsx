@@ -1,4 +1,5 @@
 import "../css/dashboard.css";
+import "../css/modal.css";
 import {NotificationsNone,
     ElectricBolt,
     Widgets,

@@ -1,4 +1,4 @@
-
+import "../css/modal.css";
 import "../css/dashboard.css";
 import {SignalCellular4Bar,
     LightModeOutlined,

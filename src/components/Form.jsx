@@ -85,7 +85,7 @@ function RegisterForm({title,label1,label2,label3,label4}){
 
                 <br />
 
-                <FormButton name="submit" value="Register"  />
+                <FormButton  name="submit" value="Register"  />
                 
             </form>
            

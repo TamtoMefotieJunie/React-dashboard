@@ -18,14 +18,12 @@ function App() {
     <Router>
       <Routes>
         <Route path='/dashboard' element={<Dashboard/>}/>
-        <Route path='/' element={<Form title="WELCOME" label2="Email" label3="Password"/>}/>
+        {/* <Route path='/' element={<Form title="WELCOME" label2="Email" label3="Password"/>}/> */}
+        {/* <Route path='/register' element={<Form title="Register" label1 label2="Email" label3="Password"/>}/> */}
       </Routes>
     </Router>
     </ThemeContext.Provider>
     
-    {/* <ThemeContext.Provider value={{theme, setTheme}}>
-    <Dashboard/>
-    </ThemeContext.Provider> */}
     {/* <CreateCv/>  */}
     {/* <RegisterForm title="Create an account" label1="Name" label2="Email" label3="Password" label4="telephone"/>  */}
     </>

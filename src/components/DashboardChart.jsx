@@ -2,6 +2,7 @@
 import BarChart  from "../components/BarChart";
 import LineChart from "./LineChart";
 import "../css/dashboard.css";
+import "../css/modal.css";
 import React from 'react';
 import { useState,useContext } from "react";
 import Chart from "chart.js/auto";

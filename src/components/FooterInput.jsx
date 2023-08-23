@@ -1,5 +1,6 @@
 
 import "../css/dashboard.css";
+import "../css/modal.css";
 import {Search} from "@mui/icons-material";
 import {ThemeContext}  from "../util/ThemeContext";
 import { useState ,useContext} from "react";

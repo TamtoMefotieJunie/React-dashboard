@@ -1,10 +1,11 @@
 import { FormControlLabel, FormGroup, Stack, Switch, Typography } from "@mui/material";
 import "../css/dashboard.css";
+import "../css/modal.css";
 import Input1 from "./NavbarInput";
 import { useState ,useContext} from "react";
-import {NearMe,Search,SpeakerNotes} from "@mui/icons-material";
-import { light } from "@mui/material/styles/createPalette";
+import {MenuOutlined, NearMe,Search,SpeakerNotes} from "@mui/icons-material";
 import {ThemeContext}  from "../util/ThemeContext";
+import Modal from "./Modal";
 
 function NavBar(){
     const { theme, setTheme } = useContext(ThemeContext);
@@ -20,19 +21,22 @@ function NavBar(){
                 <p>Dashboard</p>
                 <span className="navbarIcon"><NearMe/></span>
             </div>
-            <div className="part2">
-                <div className={"navbarMiddle-"+ theme }>
-                    <FormGroup>
+          
+            <FormGroup>
                     <Stack direction="row" className={"switchLabel-"+ theme }>
-                    <Typography>Light mode</Typography>
+                    <Typography className={"colorMode-" + theme}>Light mode</Typography>
                         <Switch 
                         onChange={handleChange}
                         checked={theme === 'light'}
                          />
-                        <Typography> Dark mode</Typography>
+                        <Typography className={"colorMode-" + theme}> Dark mode</Typography>
                     </Stack>
                     </FormGroup>
+                   
+                    <Modal/>
 
+            <div className="part2">
+                <div className={"navbarMiddle-"+ theme }>
                     <Input1 name="search" type="text" placeholder="Quick search..."/>
                     <div><SpeakerNotes/></div>
                 </div>

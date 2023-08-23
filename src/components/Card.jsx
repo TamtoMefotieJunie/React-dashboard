@@ -1,4 +1,5 @@
 import "../css/dashboard.css";
+import "../css/modal.css";
 import Input1 from "./NavbarInput";
 import {NearMe,Search,SpeakerNotes} from "@mui/icons-material";
 import { useContext } from "react";

@@ -4,16 +4,17 @@ import Input from "../components/Input";
 import { useForm } from "react-hook-form"; 
 
 
-function Form({title,label2,label3}){
+function Form({title,label1,label3}){
     
     const {register, handleSubmit,formState: {errors}} = useForm()
     return(
         <>  
-            <form action="" method = "POST" onSubmit={handleSubmit(() => console.log("user registered successfully!"))}>
+            <form action="" method = "POST">
             
                 <h1>{title}</h1>
                 <br /><br />
-                 <label htmlFor="email">{label2}</label>
+                 <label htmlFor="email">{label1}</label>
+                 {/* <label htmlFor="email">{label2}</label> */}
                 <Input 
                 register={register}
                validationRules={
@@ -44,7 +45,7 @@ function Form({title,label2,label3}){
                 />
                 <p className="error-message">{errors.password?.message}</p> 
                 
-                <FormButton name="submit" value="Login" />
+                <FormButton  name="submit"  value="Login" />
             </form>
            
         </>
